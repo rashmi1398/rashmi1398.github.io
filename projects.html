@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Automation Hub - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e2f;
+            color: white;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        nav {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4b5c;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4b5c;
+        }
+
+        .project-section {
+            display: flex;
+            align-items: flex-start;
+            background: #2a2b4a;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            gap: 15px;
+        }
+
+        .project-section img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            background: white;
+            border-radius: 8px;
+            padding: 4px;
+        }
+
+        .project-section ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+            list-style: disc;
+        }
+
+        .project-section p {
+            margin: 0;
+        }
+
+        .certification-section {
+            display: flex;
+            align-items: center;
+            background: #2a2b4a;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+        }
+
+        .certification-section img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            object-fit: contain;
+            background: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="work-experience.html">Work Experience</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <div class="project-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png" alt="Japan Sports Project">
+            <div>
+                <p><strong>Japan Sports Promotion Centre (Onsite - Japan):</strong></p>
+                <ul>
+                    <li>Developed a lottery ticketing system for sports events.</li>
+                    <li>Performed manual and automated testing using <b>Playwright</b>.</li>
+                    <li>Ensured cross-browser compatibility and UI validation.</li>
+                    <li>Used <b>JIRA</b> for test management and defect tracking.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/4201/4201973.png" alt="Motor Insurance Portal">
+            <div>
+                <p><strong>Motor Insurance Portal:</strong></p>
+                <ul>
+                    <li>Built automation flows using <b>Playwright + Cucumber</b>.</li>
+                    <li>Covered policy issuance, renewal, and payments.</li>
+                    <li>Enhanced automation coverage across regression cycles.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/2797/2797389.png" alt="CI/CD Integration">
+            <div>
+                <p><strong>CI/CD Pipeline Automation:</strong></p>
+                <ul>
+                    <li>Integrated automated test suites into <b>Jenkins</b> pipelines.</li>
+                    <li>Used GitLab CI workflows and job triggers.</li>
+                    <li>Reduced regression time and improved deployment quality.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/1584/1584941.png" alt="Defect Tracking">
+            <div>
+                <p><strong>Agile QA & Defect Lifecycle:</strong></p>
+                <ul>
+                    <li>Managed test cycles using <b>JIRA</b>.</li>
+                    <li>Participated in sprint ceremonies and daily standups.</li>
+                    <li>Collaborated with developers on defect triaging and resolution.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h1>Certifications</h1>
+
+        <div class="certification-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="Automation">
+            <p><strong>Playwright Automation Testing:</strong> Certified via <b>Udemy</b> for building robust E2E test
+                frameworks using <b>Playwright</b>, <b>JavaScript</b>, and <b>Cucumber BDD</b>. Covered test design,
+                debugging, and CI/CD integration.</p>
+        </div>
+
+        <div class="certification-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/3600/3600917.png" alt="Manual">
+            <p><strong>Manual Testing:</strong> Completed <b>Udemy</b> certification covering test case writing, bug
+                life cycle, functional testing types, and defect management best practices.</p>
+        </div>
+
+        <div class="certification-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" alt="Japanese">
+            <p><strong>Japanese NAT Q5:</strong> Certified in basic Japanese language proficiency. Used during 1.6 years
+                of onsite client collaboration in Japan.</p>
+        </div>
+    </div>
+
+    <footer>© 2025 Automation Hub | Built by Rashmi Khot</footer>
+</body>
+
+</html>

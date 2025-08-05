@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Automation Hub - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e2f;
+            color: #fff;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #ff4b5c;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #2a2b4a;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "★";
+            color: #ff4b5c;
+            padding-right: 10px;
+        }
+        a {
+            color: #ff4b5c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="work-experience.html">Work Experience</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Resume - Rashmi Khot</h1>
+    </header>
+
+    <div class="container">
+
+        <section id="projects" class="section">
+            <h2>My Automation Projects</h2>
+            <ul>
+                <li><strong>Japan Sports Promotion Centre:</strong> Automated cross-browser and functional testing for sports lottery platform using Playwright.</li>
+                <li><strong>Future Mobility Insurance Portal:</strong> Enhanced Playwright test scripts for vehicle policy purchase/renewal flow.</li>
+                <li><strong>CI/CD Integration:</strong> Integrated Playwright with Jenkins pipeline for regression automation.</li>
+                <li><strong>Defect Tracking:</strong> Sprint-based defect triage using JIRA to streamline QA processes.</li>
+            </ul>
+        </section>
+
+<section id="experience" class="section">
+    <h2>Work Experience</h2>
+    <p><strong>Automation/Manual QA</strong><br>Fujitsu Consulting Private Limited (Sep 2021 – Present)</p>
+    <ul>
+        <li>1.6 years of onsite client experience in Japan for the Japan Sports Promotion Centre project.</li>
+        <li>Performed manual testing including cross-browser, UI, functional, and regression testing.</li>
+        <li>Developed Playwright automation scripts with JavaScript, Mocha & integrated Cucumber BDD.</li>
+        <li>Designed and executed API test cases using Postman.</li>
+        <li>Contributed to CI/CD pipeline using Jenkins and GitLab.</li>
+        <li>Reported and tracked bugs using JIRA and participated in agile ceremonies.</li>
+    </ul>
+</section>
+
+
+        <section id="skills" class="section grid">
+            <div>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Playwright, Cucumber BDD</li>
+                    <li>Manual Testing (UI, Functional, Regression, Cross-Browser)</li>
+                    <li>API Testing: Postman</li>
+                    <li>JIRA, Jenkins, GitLab</li>
+                    <li>HTML, CSS, JavaScript, TypeScript</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Playwright Automation Testing</li>
+                    <li>Manual Testing</li>
+                    <li>Japanese NAT Q5 Certified</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Languages</h2>
+                <p>English (Fluent), Kannada (Fluent), Hindi (Fluent), Marathi (Fluent), Japanese (Basic)</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Automation Hub | Built by Rashmi Khot</p>
+    </footer>
+</body>
+</html>

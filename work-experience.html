@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Automation Hub</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+        line-height: 1.8;
+        overflow-x: hidden;
+    }
+
+    nav {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #00e6e6;
+    }
+
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .experience-section {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        margin: 60px auto;
+        max-width: 1200px;
+        width: 90%;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+    }
+
+    .experience-section h2 {
+        font-size: 3rem;
+        color: #00e6e6;
+        margin-bottom: 30px;
+    }
+
+    .experience-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .experience-card {
+        background: rgba(0, 0, 0, 0.8); /* Dark background for better contrast */
+        padding: 25px;
+        width: 45%;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: #f0f0f0; /* Light text */
+    }
+
+    .experience-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .experience-card h3 {
+        color: #00e6e6; /* Teal accent */
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .experience-card p {
+        font-style: italic;
+        color: #ffcc70; /* Soft gold for sub-labels */
+        margin-bottom: 10px;
+    }
+
+    .experience-card p strong {
+        color: #ffcc70;
+    }
+
+    .experience-card ul {
+        font-size: 1.2rem;
+        color: #dddddd; /* Light gray text */
+        list-style: none;
+        padding: 0;
+    }
+
+    .experience-card ul li {
+        margin-bottom: 12px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .experience-card ul li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: #00e6e6; /* Teal bullets */
+        font-size: 1.5rem;
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="https://videos.pexels.com/video-files/856054/856054-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="work-experience.html">Work Experience</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Work Experience Section -->
+   <div class="experience-block">
+
+    <!-- Fujitsu India Experience -->
+    <div class="experience-card">
+        <h3>Software Test Engineer – Fujitsu India</h3>
+        <p><strong>Location:</strong> Pune, India</p>
+        <ul>
+              <li>Contributed to a motor insurance web portal project enabling users to purchase or renew vehicle insurance policies online.</li>
+        <li>Enhanced automation test scripts for the policy issuance flow to ensure stability after code changes.</li>
+        <li>Collaborated with the QA team to ensure smooth regression testing and improve test coverage.</li>
+        <li>Worked on Manual and Automation testing using Playwright, JavaScript, and Jenkins CI/CD pipelines.</li>
+        <li>Handled test case design, execution, bug tracking using JIRA, and API testing using Postman.</li>
+        </ul>
+    </div>
+
+    <!-- Onsite Japan Experience -->
+    <div class="experience-card">
+        <h3>Software Test Engineer – Fujitsu Japan</h3>
+        <p><strong>Location:</strong> Tokyo, Japan</p>
+        <ul>
+                    <li>Served as a Manual and Automation QA Engineer for a sports lottery web platform, ensuring a seamless and compliant user experience across browsers.</li>
+        <li>Performed functional, UI, cross-browser, and regression testing to validate game flows, ticket purchasing, and user account operations.</li>
+        <li>Automated end-to-end test scenarios using Playwright, improving test execution speed and coverage across modern browsers.</li>
+        <li>Documented comprehensive test cases, test plans, and edge-case scenarios to support structured QA processes.</li>
+        <li>Tracked bugs and managed sprints using JIRA, ensuring transparency and timely defect resolution.</li>
+        <li>Integrated Playwright tests into Jenkins CI/CD to speed up regression and boost deployment reliability.</li>
+        </ul>
+    </div>
+
+</div>
+
+
+    </section>
+</body>
+
+</html>

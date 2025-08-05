@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Automation Hub - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #1e1e2f;
+      color: white;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    nav {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4b5c;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4b5c;
+      margin-bottom: 30px;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #2a2b4a;
+      border-radius: 15px;
+      padding: 30px 20px;
+      margin: 30px auto;
+      width: 80%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .contact-section img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #ff4b5c;
+    }
+
+    .contact-section a {
+      color: #ff4b5c;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+      word-break: break-word;
+    }
+
+    .contact-section a:hover {
+      color: #ffffff;
+    }
+
+    .contact-section p {
+      margin: 8px 0;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      background: #fff;
+      color: #333;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #ff4b5c;
+      outline: none;
+    }
+
+    .contact-form button {
+      padding: 15px;
+      background: #ff4b5c;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #e03e4f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      position: relative;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="work-experience.html">Work Experience</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+
+    <div class="contact-section">
+      <img src="Images/IMG_20220111_183609_760.jpg" alt="Rashmi Khot" />
+      <p><strong>GitHub:</strong> <a href="https://github.com/rashmi-khot" target="_blank" rel="noopener">rashmi-khot</a></p>
+      <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/rashmi-khot-a83551209" target="_blank" rel="noopener">
+          linkedin.com/in/rashmi-khot-a83551209
+        </a>
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:khotrashmi9813@gmail.com">khotrashmi9813@gmail.com</a></p>
+      <p><strong>Contact:</strong> <a href="tel:+916361960409">+91 6361960409</a></p>
+    </div>
+
+    <h2 style="text-align:center; margin-top: 40px;">Send Me a Message</h2>
+    <form class="contact-form" onsubmit="openMailApp(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>© 2025 Automation Hub | Built by Rashmi Khot</footer>
+
+  <script>
+    function openMailApp(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent("Message from " + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      window.location.href = `mailto:khotrashmi9813@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
